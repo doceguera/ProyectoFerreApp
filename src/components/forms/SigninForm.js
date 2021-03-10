@@ -80,13 +80,14 @@ const SigninForm = ({ navigation }) => {
         placeholder="Password"
         leftIcon={<Icon name="lock" />}
         value={password}
+        secureTextEntry
         onChangeText={setPassword}
         onBlur={() => {
           handleVerify("password");
         }}
         errorMessage={passwordError ? "Por favor ingresa tu contraseña" : null}
       />
-      <Button title="Signin" onPress={handleSignin} />
+      <Button type="outline" title="Inciar Sesion" onPress={handleSignin} />
     </View>
   );
 };

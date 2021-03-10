@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "453479640414",
+    "project_id": "ferrito-inv-app",
+    "storage_bucket": "ferrito-inv-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453479640414:android:6f01b3f7f437e2ad5273cf",
+        "android_client_info": {
+          "package_name": "prueba.musi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "453479640414-kai4ani5vdd54l3sg11ou8uengesautv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "prueba.musi",
+            "certificate_hash": "f4e62191d392d2e0fcc29b7624ac415bbd5217f7"
+          }
+        },
+        {
+          "client_id": "453479640414-6b8941nk8j3tpk0h0459v1cd7duqjg7p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByIAnf9PbBrzgePnl2qRJXPDXkFrSyFjE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "453479640414-6b8941nk8j3tpk0h0459v1cd7duqjg7p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

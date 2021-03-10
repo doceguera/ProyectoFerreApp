@@ -4,6 +4,7 @@ import Logo from "../shared/Logo";
 import SigninForm from "../forms/SigninForm";
 import theme from "../../theme";
 import Alert from "../shared/Alert";
+import Botones from '../shared/Botones';
 
 const Login = ({ navigation, route }) => {
   const { userCreated } = route.params;
@@ -14,10 +15,25 @@ const Login = ({ navigation, route }) => {
         <Alert type="success" title="User created! You can now sign in!" />
       ) : null}
       <SigninForm navigation={navigation} />
-      <Text style={styles.forgotPassword}>Forgot your password?</Text>
-      <TouchableOpacity onPress={() => navigation.navigate("Signup")}>
-        <Text>Don't have an account? Sign up</Text>
+
+      <TouchableOpacity onPress={() => navigation.navigate("password")}>
+        <Text style={styles.forgotPassword}>Olvidaste tu contraseña?</Text>
       </TouchableOpacity>
+     
+      <TouchableOpacity onPress={() => navigation.navigate("Signup")}>
+        <Text>No tienes cuenta? Registrate</Text>
+      </TouchableOpacity>
+      
+
+      <Botones 
+        buttonTitle="Inicia sesión con Google"
+        btnType="google"
+        color="#de4d41"
+        backgroundColor="#f5e7ea"
+        onPress={() => {}}
+      />
+
+   
     </View>
   );
 };
@@ -27,7 +43,7 @@ const styles = StyleSheet.create({
     flex: 1,
 
     padding: 30,
-    backgroundColor: theme.colors.backgroundWhite,
+    backgroundColor: theme.colors.blue,
   },
   forgotPassword: {
     textAlign: "right",

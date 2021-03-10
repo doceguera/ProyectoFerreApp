@@ -19,7 +19,7 @@ const SignupForm = ({ navigation }) => {
 
   // Verifica que los datos ingresados sean correctos
   const handleVerify = (input) => {
-    if (input === "fullname") {
+    if (input === "Nombre Completo") {
       // Verificar el nombre del usuario
       if (!fullname) setFullnameError(true);
       else setFullnameError(false);
@@ -28,12 +28,12 @@ const SignupForm = ({ navigation }) => {
       if (!email) setEmailError(true);
       else if (!validate(email)) setEmailError(true);
       else setEmailError(false);
-    } else if (input === "password") {
+    } else if (input === "Contraseña") {
       // Verificar la contraseña
       if (!password) setPasswordError(true);
       else if (password.length < 6) setPasswordError(true);
       else setPasswordError(false);
-    } else if (input === "confirmPassword") {
+    } else if (input === "Confirme su Contraseña") {
       // Verificar la confirmación de la contraseña
       if (!confirmPassword) setConfirmPasswordError(true);
       else if (confirmPassword !== password) setConfirmPasswordError(true);
@@ -79,12 +79,12 @@ const SignupForm = ({ navigation }) => {
     <View>
       {error ? <Alert type="error" title={error} /> : null}
       <Input
-        placeholder="Full name"
+        placeholder="Nombre Completo"
         leftIcon={<Icon name="user" />}
         value={fullname}
         onChangeText={setFullname}
         onBlur={() => {
-          handleVerify("fullname");
+          handleVerify("Nombre Completo");
         }}
         errorMessage={
           fullnameError ? "Por favor ingresa tu nombre completo" : ""
@@ -104,14 +104,14 @@ const SignupForm = ({ navigation }) => {
         }
       />
       <Input
-        placeholder="Password"
+        placeholder="Contraseña"
         leftIcon={<Icon name="lock" />}
         value={password}
         onChangeText={setPassword}
         secureTextEntry
         autoCapitalize="none"
         onBlur={() => {
-          handleVerify("password");
+          handleVerify("Contraseña");
         }}
         errorMessage={
           passwordError
@@ -120,14 +120,14 @@ const SignupForm = ({ navigation }) => {
         }
       />
       <Input
-        placeholder="Confirm password"
+        placeholder="Confirme su Contraseña"
         leftIcon={<Icon name="lock" />}
         value={confirmPassword}
         onChangeText={setConfirmPassword}
         secureTextEntry
         autoCapitalize="none"
         onBlur={() => {
-          handleVerify("confirmPassword");
+          handleVerify("Confirme su Contraseña");
         }}
         errorMessage={
           confirmPasswordError
@@ -135,7 +135,7 @@ const SignupForm = ({ navigation }) => {
             : ""
         }
       />
-      <Button title="Create account" onPress={handleSignup} />
+      <Button type="outline" title="Crea tu cuenta" onPress={handleSignup} />
     </View>
   );
 };

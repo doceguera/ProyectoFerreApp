@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "FerreApp",
-    "slug": "FerreApp",
+    "name": "soundsbetter",
+    "slug": "soundsbetter",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -17,13 +17,25 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "example.expo.googlesignin",
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "<YOUR_REVERSED_IOS_CLIENT_ID>"
+        }
+      },
+      "googleServicesFile": "./GoogleService-Info.plist"
+
+
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "prueba.musi",
+      "googleServicesFile": "./google-services.json"
+      
     },
     "web": {
       "favicon": "./assets/favicon.png"
