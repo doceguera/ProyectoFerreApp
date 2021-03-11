@@ -17,7 +17,7 @@ const Signup = ({ navigation }) => {
           navigation.goBack();
         }}
       >
-        <Text>Already got an account? Sign in</Text>
+        <Text>¿Ya tienes una cuenta? Resgistrate</Text>
       </TouchableOpacity>
     </View>
   );
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     padding: 10,
-    backgroundColor: theme.colors.backgroundWhite,
+    backgroundColor: theme.colors.blue,
   },
 });
 

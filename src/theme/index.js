@@ -6,6 +6,7 @@ const theme = {
     purple: "#ae3b76",
     green: "#0aebaf",
     orange: "#ff7746",
+    blue:"#D6EAF8",
   },
 };
 
