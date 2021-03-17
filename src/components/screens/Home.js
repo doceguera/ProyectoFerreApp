@@ -4,7 +4,6 @@ import { colors } from "react-native-elements";
 import darkColors from "react-native-elements/dist/config/colorsDark";
 import { color } from "react-native-reanimated";
 import theme from "../../theme";
-<<<<<<< HEAD
 
 =======
 >>>>>>> f8a71d0c0a79eec148685dc617b7020d4b446784

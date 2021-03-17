@@ -21,19 +21,12 @@
       "bundleIdentifier": "example.expo.googlesignin",
       "config": {
         "googleSignIn": {
-<<<<<<< HEAD
-=======
 
->>>>>>> f8a71d0c0a79eec148685dc617b7020d4b446784
           "reservedClientId": "<YOUR_REVERSED_IOS_CLIENT_ID>"
         }
       },
       "googleServicesFile": "./GoogleService-Info.plist"
-<<<<<<< HEAD
 
-
-=======
->>>>>>> f8a71d0c0a79eec148685dc617b7020d4b446784
     },
     "android": {
       "adaptiveIcon": {
@@ -41,7 +34,6 @@
         "backgroundColor": "#FFFFFF"
       },
       "package": "prueba.musi",
-<<<<<<< HEAD
       "googleServicesFile": "./google-services.json"
       
 =======

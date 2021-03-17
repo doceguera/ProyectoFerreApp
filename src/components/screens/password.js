@@ -43,7 +43,5 @@ const styles = StyleSheet.create({
   });
 
 export default recover;
-=======
 
->>>>>>> f8a71d0c0a79eec148685dc617b7020d4b446784
 
