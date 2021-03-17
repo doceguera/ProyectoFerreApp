@@ -77,7 +77,7 @@ const SigninForm = ({ navigation }) => {
         }
       />
       <Input
-        placeholder="Password"
+        placeholder="Contraseña"
         leftIcon={<Icon name="lock" />}
         value={password}
         secureTextEntry

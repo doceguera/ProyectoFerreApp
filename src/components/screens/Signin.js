@@ -5,6 +5,10 @@ import SigninForm from "../forms/SigninForm";
 import theme from "../../theme";
 import Alert from "../shared/Alert";
 import Botones from '../shared/Botones';
+import * as AppAuth from 'expo-app-auth';
+import firebase from "firebase/app";
+const { URLSchemes } = AppAuth;
+var provider = new firebase.auth.GoogleAuthProvider();
 
 const Login = ({ navigation, route }) => {
   const { userCreated } = route.params;
@@ -26,11 +30,35 @@ const Login = ({ navigation, route }) => {
       
 
       <Botones 
-        buttonTitle="Inicia sesión con Google"
+        buttonTitle="Iniciar con Google"
         btnType="google"
         color="#de4d41"
         backgroundColor="#f5e7ea"
-        onPress={() => {}}
+        onPress={() => {
+          firebase.auth()
+          .signInWithPopup(provider)
+          .then((result) => {
+            /** @type {firebase.auth.OAuthCredential} */
+            var credential = result.credential;
+
+            // This gives you a Google Access Token. You can use it to access the Google API.
+            var token = credential.accessToken;
+            // The signed-in user info.
+            var user = result.user;
+            // ...
+            navigation.navigate("Home");
+          }).catch((error) => {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            // The email of the user's account used.
+            var email = error.email;
+            // The firebase.auth.AuthCredential type that was used.
+            var credential = error.credential;
+            // ...
+          })
+
+        }}
       />
 
    

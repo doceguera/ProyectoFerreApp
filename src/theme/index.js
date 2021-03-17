@@ -9,6 +9,8 @@ const theme = {
     blue:"#D6EAF8",
     White:"#FFFFFF",
     yellow:"#FFFF99",
+    logocolor:"#1A5276",
+    botones:"#6699FF",
   },
 };
 
