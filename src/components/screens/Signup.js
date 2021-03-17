@@ -17,7 +17,11 @@ const Signup = ({ navigation }) => {
           navigation.goBack();
         }}
       >
+<<<<<<< HEAD
         <Text>¿Ya tienes una cuenta?</Text>
+=======
+        <Text>¿Ya tienes una cuenta? Resgistrate</Text>
+>>>>>>> f8a71d0c0a79eec148685dc617b7020d4b446784
       </TouchableOpacity>
     </View>
   );

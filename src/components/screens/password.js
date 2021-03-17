@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component } from 'react'
 import { Text, View, TouchTabletOpacity, StyleSheet } from 'react-native';
 import theme from "../../theme";
@@ -42,4 +43,7 @@ const styles = StyleSheet.create({
   });
 
 export default recover;
+=======
+
+>>>>>>> f8a71d0c0a79eec148685dc617b7020d4b446784
 

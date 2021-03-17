@@ -11,4 +11,9 @@ web-build/
 
 # macOS
 .DS_Store
+<<<<<<< HEAD
 enviroment.js
+=======
+enviroment.js
+enviromentApi.js
+>>>>>>> f8a71d0c0a79eec148685dc617b7020d4b446784

@@ -30,7 +30,11 @@ const Login = ({ navigation, route }) => {
       
 
       <Botones 
+<<<<<<< HEAD
         buttonTitle="Iniciar con Google"
+=======
+        buttonTitle="Sign In with Google"
+>>>>>>> f8a71d0c0a79eec148685dc617b7020d4b446784
         btnType="google"
         color="#de4d41"
         backgroundColor="#f5e7ea"

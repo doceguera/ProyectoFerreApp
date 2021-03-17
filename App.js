@@ -7,16 +7,26 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import Signin from "./src/components/screens/Signin";
 import Signup from "./src/components/screens/Signup";
+<<<<<<< HEAD
 import password from './src/components/screens/password';
 import Home from "./src/components/screens/Home";
 import theme from "./src/theme";
 import PersistLogin from "./src/firebase/persistLogin";
 
+=======
+
+import Home from "./src/components/screens/Home";
+import theme from "./src/theme";
+import PersistLogin from "./src/utils/persistLogin";
+>>>>>>> f8a71d0c0a79eec148685dc617b7020d4b446784
 
 const Stack = createStackNavigator();
 
 export default function App() {
+<<<<<<< HEAD
   
+=======
+>>>>>>> f8a71d0c0a79eec148685dc617b7020d4b446784
   const [user, setUser] = useState({});
 
   // Verificar si ya existen credenciales de autenticación
@@ -37,8 +47,13 @@ export default function App() {
                   initialParams={{ userCreated: false }}
                   options={{ headerShown: false }}
                 />
+<<<<<<< HEAD
                 <Stack.Screen name="Signup" options={{headerShown: false}}  component={Signup} />
                 <Stack.Screen name="password" options={{headerShown: false}} component={password} />
+=======
+                <Stack.Screen name="Signup" component={Signup} />
+               
+>>>>>>> f8a71d0c0a79eec148685dc617b7020d4b446784
               <Stack.Screen
                 name="Home"
                 component={Home}

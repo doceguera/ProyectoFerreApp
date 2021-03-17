@@ -1119,6 +1119,29 @@
   version "1.0.20"
   resolved "https://registry.yarnpkg.com/@expo/config-plugins/-/config-plugins-1.0.20.tgz#b1964daf063d7ce07c3f135aa92ccf1c60cd6e46"
   integrity sha512-BucZQbi7edu8Pin8zFUNsaQeZAj/8ga7Ei3PKivKZKd5F53DdFU6Yb+ZDyQ0UeOGDi0hZlZWdaBzmQqHEg37TQ==
+<<<<<<< HEAD
+=======
+  dependencies:
+    "@expo/config-types" "^40.0.0-beta.2"
+    "@expo/configure-splash-screen" "0.3.4"
+    "@expo/image-utils" "0.3.10"
+    "@expo/json-file" "8.2.28-alpha.0"
+    "@expo/plist" "0.0.11"
+    find-up "~5.0.0"
+    fs-extra "9.0.0"
+    getenv "0.7.0"
+    glob "7.1.6"
+    resolve-from "^5.0.0"
+    slash "^3.0.0"
+    slugify "^1.3.4"
+    xcode "^2.1.0"
+    xml2js "^0.4.23"
+
+"@expo/config-plugins@~1.0.13":
+  version "1.0.21"
+  resolved "https://registry.yarnpkg.com/@expo/config-plugins/-/config-plugins-1.0.21.tgz#5a6f5c818dd7bccc2f3e381cbf8b0657c38bb302"
+  integrity sha512-sMTF0/lx52ovJPz9iH5l0aKRpPFFtYoAQ+38AYhXI890Sswr1UU4Pq3IA5RMdvtOTkTzNREr21WvEHd7X8D1dA==
+>>>>>>> f8a71d0c0a79eec148685dc617b7020d4b446784
   dependencies:
     "@expo/config-types" "^40.0.0-beta.2"
     "@expo/configure-splash-screen" "0.3.4"
@@ -3439,11 +3462,20 @@ expand-brackets@^2.1.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
+<<<<<<< HEAD
 expo-app-auth@~9.3.0:
   version "9.3.0"
   resolved "https://registry.yarnpkg.com/expo-app-auth/-/expo-app-auth-9.3.0.tgz#072bd3faa8a34ff50f700627bd4eb8480629b915"
   integrity sha512-f8OdQDNmC5vSdBWzwtic5pq+bmtSCYGU1KeVhKV3W8VgGIgVx40Q72q3M+SMs68bz4RCuC1g7LOGTOBWzXIuNw==
   dependencies:
+=======
+expo-app-auth@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/expo-app-auth/-/expo-app-auth-10.0.0.tgz#0c8caf50ec45f0d72319dcb6b771be7a7e925f97"
+  integrity sha512-b4pdcCYqkx0BAPzH7GQ/mJWYJcR7vnQ0QE0d2V36meTx75j/CZrcgkwtD+aSEbkbdcDeVMyUekzCCAp9ACmcWw==
+  dependencies:
+    "@expo/config-plugins" "~1.0.13"
+>>>>>>> f8a71d0c0a79eec148685dc617b7020d4b446784
     invariant "^2.2.4"
 
 expo-application@~2.4.1:
